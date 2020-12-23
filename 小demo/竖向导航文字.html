@@ -1,0 +1,71 @@
+<html>
+ 
+<head>
+    <style>
+        .main {
+            width: 375px;
+            height: 600px;
+            background: #eee;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-banner {
+            height: 60px;
+            width: 100%;
+            background: #333;
+            color: #fff;
+            text-align: center;
+            line-height: 60px
+        }
+        .main-content {
+            display: flex;
+            position: relative;
+            flex: 1;
+        }
+        .main-content .main-list {
+            display: flex;
+            border-left: 1px solid #000;
+            margin-left: 33px;
+            flex-direction: column;
+            width: calc(100% - 33px);
+        }
+        .main-content .nav {
+            position: absolute;
+            height: 32px;
+        }
+        .main-content .nav .nav-list {
+            transform: rotate(90deg);
+            transform-origin: 0 0;
+            display: flex;
+            margin-left: 32px;
+
+        }
+        .main-content .nav .nav-list-item{
+            margin-left: 10px;
+            transform: rotate(180deg);
+            line-height: 32px;
+        }
+
+    </style>
+</head>
+ 
+<body>
+    <div class="main">
+        <div class="main-banner">banner</div>
+        <div class="main-content">
+            <div class="nav">
+                <div class="nav-list">
+                    <div class="nav-list-item">2019年度徽章ssss</div>
+                    <div class="nav-list-item">2018年度徽章ddd</div>
+                    <div class="nav-list-item">2017年度徽章fff</div>
+                </div>
+            </div>
+            <view class="main-list">
+                
+            </view>
+        </div>
+    </div>
+</body>
+ 
+</html>

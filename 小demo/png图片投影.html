@@ -1,0 +1,50 @@
+<html>
+ 
+<head>
+    <style>
+    div {
+        width: 200px;
+        display: inline-block;
+    }
+ 
+    .png {
+        display: block;
+        position: relative;
+        height: 200px;
+        width: 200px;
+        margin-top: -190px; //使用 margin-top 偏移，将原图片隐藏到窗口之外
+        float: right;
+    }
+ 
+    .png_shadow {
+        background: url(http://10.157.164.1/image/badge-icon1.png) no-repeat;
+        background-size: 180px 180px;
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+    }
+ 
+    .shadow_color-1 {
+        /* 向下投影100px 投影颜色为 #FFB90F */
+        filter: drop-shadow(0 180px red);
+        /* 向上投影100px 投影颜色为 #FFB90F */
+        /* filter: drop-shadow(0 -100px #FFB90F); */
+        /* 向右投影100px 投影颜色为 #FFB90F */
+        /* filter: drop-shadow(100px 0 #FFB90F); */
+        /* 向左投影100px 投影颜色为 #FFB90F */
+        /* filter: drop-shadow(-100px 0 #FFB90F); */
+    }
+ 
+
+    </style>
+</head>
+ 
+<body>
+    <div>
+        <i class="png">
+            <i class="png_shadow shadow_color-1"></i>
+        </i>
+    </div>
+</body>
+ 
+</html>
